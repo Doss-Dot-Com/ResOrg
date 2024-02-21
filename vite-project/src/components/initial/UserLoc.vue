@@ -2,8 +2,8 @@
     <div>
         <div class="grid-container">
             <div class="info-item">
-                <span class="label">{{ userInfo.label }}</span>: <!-- Updated -->
-                <span class="value typingEffect">{{ userInfo.value }}</span> 
+                <span class="label">{{ usersLoc.label }}: </span>
+                <span class="value">{{ usersLoc.value }}</span> 
             </div>
         </div>
     </div>
@@ -11,7 +11,7 @@
 
 <script setup>
 const props = defineProps({
-    userInfo: Object
+    usersLoc: Object
 })
 
 </script>
