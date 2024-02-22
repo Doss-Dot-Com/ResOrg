@@ -64,6 +64,11 @@ button:focus-visible {
   padding: 2em;
 }
 
+.completed {
+  color: #00d17d;
+  justify-content: right;
+}
+
 .details-container {
   font-family: "Terminus", monospace;
   font-size: 1rem;
