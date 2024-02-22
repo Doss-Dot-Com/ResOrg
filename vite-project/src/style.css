@@ -86,9 +86,15 @@ button:focus-visible {
 }
 
 .info-item {
-  font-size: 13px;
+  font-size: 12px;
   margin: -5px;
   
+}
+
+.qrcode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #app {

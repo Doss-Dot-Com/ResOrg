@@ -3,25 +3,19 @@
         <div class="grid-container">
             <div class="info-item">
                 <span class="label">{{ usersInfo.label }}: </span>
-                <span v-if="showInfoValue" class="value">{{ usersInfo.value }}</span> 
+                <span v-if="showValue" class="value">{{ usersInfo.value }}</span>
+                <span v-if="(completed === true)" class="completed">   Completed</span>
+                <span v-else> <Loading /> </span>
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-
-const props = defineProps({
-    usersInfo: Object
+import Loading from '../elements/Loading.vue'
+defineProps({
+    usersInfo: Object,
+    showValue: Boolean,
+    completed: Boolean
 })
-
-const showInfoValue = ref(false)
-
-onMounted(() => {
-    setTimeout(() => {
-        showInfoValue.value = true
-    }, 1000)
-})
-
 </script>
